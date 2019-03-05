@@ -15,7 +15,8 @@ import com.dms.springcloud.entities.Dept;
 @RestController
 public class DeptController_Consumer {
 	
-	public static String REDT_URL_PREFIX = "http://127.0.0.1:8001/";
+	//public static String REDT_URL_PREFIX = "http://127.0.0.1:8001/";
+	public static String REDT_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT/";
 
 	@Autowired
 	private RestTemplate restTemplate;
