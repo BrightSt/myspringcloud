@@ -2,6 +2,11 @@ package com.dms.springcloud.entities;
 
 import java.io.Serializable;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+
+
 public class Dept implements Serializable// entity --orm--- db_table
 {
 	private Long 	deptno; // 主键
@@ -10,22 +15,24 @@ public class Dept implements Serializable// entity --orm--- db_table
 	public Long getDeptno() {
 		return deptno;
 	}
-	public void setDeptno(Long deptno) {
+	public Dept setDeptno(Long deptno) {
 		this.deptno = deptno;
+		return this;
 	}
 	public String getDname() {
 		return dname;
 	}
-	public void setDname(String dname) {
+	public Dept setDname(String dname) {
 		this.dname = dname;
+		return this;
 	}
 	public String getDb_source() {
 		return db_source;
 	}
-	public void setDb_source(String db_source) {
+	public Dept setDb_source(String db_source) {
 		this.db_source = db_source;
+		return this;
 	}
-	
 	
 	
 	
